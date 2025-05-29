@@ -1,0 +1,21 @@
+<script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=U8fcGx"></script>
+
+<script type="text/javascript">
+  // Wait for Klaviyo to be loaded
+  function onKlaviyoReady(callback) {
+    const interval = setInterval(function () {
+      if (window.klaviyo && typeof window.klaviyo.track === 'function') {
+        clearInterval(interval);
+        callback();
+      }
+    }, 50);
+  }
+
+  onKlaviyoReady(function () {
+    klaviyo.track('Added to Cart', {
+      ProductID: '123',
+      ProductName: 'Lion Mug',
+      Price: 14.99
+    });
+  });
+</script>
