@@ -2,6 +2,7 @@
 
 <script type="text/javascript">
   // Wait for Klaviyo to be loaded
+  console.log('on track html')
   function onKlaviyoReady(callback) {
     const interval = setInterval(function () {
       if (window.klaviyo && typeof window.klaviyo.track === 'function') {
