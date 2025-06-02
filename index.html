@@ -44,5 +44,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <h1>Prova</h1>
+    <script>
+if ('undefined' != typeof gtag) {
+                gtag('event', 'add_to_cart', {
+                    ecommerce: {
+                        items: [
+                            {
+                                item_name: "Menjar per a gossos",
+                                item_id: "1234",
+                                price: 12.6,
+                                item_brand: "Marca Prova"
+                            }
+                        ]
+                    }
+                });
+            }
+        
+    </script>
 </body>
 </html>
