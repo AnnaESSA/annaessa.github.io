@@ -31,7 +31,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <h1>Prova</h1>
    <script>
-            whenAvailable('gtag', function() {
+             if ('undefined' != typeof gtag) {
                 gtag('event', 'purchase', {
                     ecommerce: {
                         transaction_id: "asdff4242",
@@ -52,7 +52,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         ]
                     }
                 });
-            });
+            };
         </script>
     
 </body>
