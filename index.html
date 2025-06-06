@@ -41,28 +41,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5F59QL25"
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5F59QL25"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+   
 <!-- End Google Tag Manager (noscript) -->
     <h1>Prova</h1>
     <script>
-if ('undefined' != typeof gtag) {
-         console.log('entering gtag')
-                gtag('event', 'add_to_cart', {
-               
-                    ecommerce: {
-                        items: [
-                            {
-                                item_name: "Menjar per a gossos",
-                                item_id: "1234",
-                                price: 12.6,
-                                item_brand: "Marca Prova"
-                            }
-                        ]
-                    }
-                });
-            }
-        
-    </script>
+           
+            console.log(client);
+            window.dataLayer = window.dataLayer || [];
+            dataLayer.push({
+                event: 'userLoggedIn',
+                user_email: 'provaGTM@gmail.com',
+                user_id: 1234567
+            });
+     </script>
+    
 </body>
 </html>
