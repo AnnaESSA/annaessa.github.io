@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script async type='text/javascript' src='https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=U8fcGx'></script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5F59QL25');</script>
+<!-- End Google Tag Manager -->
+
+    <script>
+
+        // Define dataLayer and the gtag function.
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+
+        const SERVICE_AD_STORAGE = 'ad_storage';
+        const SERVICE_AD_USER_DATA = 'ad_user_data';
+        const SERVICE_AD_PERSONALIZATION = 'ad_personalization';
+        const SERVICE_ANALYTICS_STORAGE = 'analytics_storage';
+        const SERVICE_FUNCTIONALITY_STORAGE = 'functionality_storage';
+        const SERVICE_PERSONALIZATION_STORAGE = 'personalization_storage';
+        const SERVICE_SECURITY_STORAGE = 'security_storage';
+        
+        // Set default consent to 'denied' (this should happen before changing any other dataLayer)
+        gtag('consent', 'default', {
+            [SERVICE_AD_STORAGE]: 'granted',
+            [SERVICE_AD_USER_DATA]: 'granted',
+            [SERVICE_AD_PERSONALIZATION]: 'granted',
+            [SERVICE_ANALYTICS_STORAGE]: 'granted',
+            [SERVICE_FUNCTIONALITY_STORAGE]: 'granted',
+            [SERVICE_PERSONALIZATION_STORAGE]: 'granted',
+            [SERVICE_SECURITY_STORAGE]: 'granted',
+        });
+    </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5F59QL25"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+   
+<!-- End Google Tag Manager (noscript) -->
+    <h1>Prova</h1>
+   <script>
+            whenAvailable('gtag', function() {
+                gtag('event', 'purchase', {
+                    ecommerce: {
+                        transaction_id: "asdff4242",
+                        value: 12.4,
+                        currency: "EUR",
+                        shipping: 3,
+                        items: [
+                           
+                            {
+                                "item_name": "gggg",
+                                "item_id": "ggg",
+                                "price": 8,
+                                "item_brand": "ggg",
+                                "item_category": "ggg",
+                                "quantity": 3,
+                            },
+                           
+                        ]
+                    }
+                });
+            });
+        </script>
+    
+</body>
+</html>
